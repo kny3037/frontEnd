@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title> HypherText(HyperLink) </title>
+    <style> /*html 태그들은 컨텐츠의 의미와 구조를 표시, html 문서의 모양(디자인요소)은 style 여러 속성으로 설정*/
+        html{/* html 태그에 적용되는 디자인 속성 */
+            margin: -5px; padding: 0px;
+        }
+        body{ /* body 태그에 적용되는 디자인 속성 */
+          margin: 0px; padding: 0px; 
+        }
+    </style>
 </head>
 <body>
   <!--웹문서 사이의 연결(링크)는 a(anchor)태그-->
@@ -17,12 +25,12 @@
   <hr>
   <!--이미지 포함 시키기 : img 태그, 종료 태그 없음-->
   <!--<img src = "images/asd.jpg"> images 폴더가 day1폴더 아래에 있을 때입니다. 이미지 표시 안됨(엑스박스)-->
-  <img src="../images/asd.jpg" width="50%"><!--윈도우 크기의 50%-->
+  <img src="../images/asd1.jpg" width="50%"><!--윈도우 크기의 50%-->
   <img src="../images/asd2.jpg" width="50%">  <!--  ../는 한단계 상위폴더로 이동(상대경로)-->
   <img src="../images/asd3.jpg" width="50%">
   <hr>
   <!--아래 3개의 이미지 너비를 합하면 화면의 90%, 3개가 같은 라인으로 배치됩니다.-->
-  <img src="../images/asd.jpg" width="30%"><!--윈도우 크기의 30% : 이미지 비율에 따라 높이 결정됩니다. -->
+  <img src="../images/asd1.jpg" width="30%"><!--윈도우 크기의 30% : 이미지 비율에 따라 높이 결정됩니다. -->
   <img src="../images/asd2.jpg" width="30%">
   <img src="../images/asd3.jpg" width="30%">
   <!--만약에 이미지 너비를 40%로 하면 2개 80 같은 라인으로 배치, 1개는 라인 바꿔 표시됩니다.
@@ -30,10 +38,12 @@
       다른 라인에 표시 됩니다.
     -->
   <hr>
-  <div><img src="../images/asd.jpg" width="30%"></div>
+  <!--div태그로 이미지가 다른 라인에 표시가 됩니다.-->
+  <div><img src="../images/asd1.jpg" width="30%"></div>
   <div><img src="../images/asd2.jpg" width="30%"></div>
   <div><img src="../images/asd3.jpg" width="30%"></div>
-
+  <!-- 이미지에 a태기 적용하기 -->
+  네이버로 이동하기<a href="https://www.naver.com"><img src="../images/asd3"width="30%"></a>
 
 </body>
 </html>
