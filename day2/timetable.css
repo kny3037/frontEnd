@@ -1,0 +1,19 @@
+table{
+            height: 300px; /*px : 스크린 해상도에서 사용하는 단위*/
+            width: 600px;
+            margin: auto; 
+            /* ↑ 테이블 왼쪽여백을 자동으로 설정.(화면 중앙에 오도록)*/
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            background-color: aliceblue;
+            text-align: center;
+            width: 100px;
+        }
+        td.day{
+            background-color:rgb(170, 249, 250);
+        }
+        td.time{
+            background-color:rgb(170, 249, 250);
+        }
