@@ -1,0 +1,23 @@
+td.color{
+    background-color: blueviolet;
+   border-radius: 4px;
+   text-align: center;
+}
+/* 속성을 이용한 선택자 */
+input,select{
+    padding: 7px;
+    border-radius: 4px;
+}
+
+input[type=submit],input[type=reset]{
+    cursor: pointer;
+    border: none;
+}
+
+input[type=submit]:hover,input[type=reset]:hover{
+    background-color: palevioletred;
+}
+
+input[type=text],input[type=password],input[type=email]{
+    width: 50%;
+}
