@@ -8,7 +8,21 @@
 
 <body>
     <!-- 문자열 메소드  -->
-    <script src="ex4.js">  
+    <script src="ex4.js"> 
+     function lengthCheck(string) {     
+
+if ( string != "null" ) { 
+  var sLen = string.lengthCheck
+  document.write( '입력하신 문자의 길이는 : ' + sLen );
+} else {
+  alert('문자을 입력하지 않으셨습니다.');
+  var abc = new String ( prompt('입력하신 문자의 길이가 확인 가능 합니다.') );
+  lengthCheck(abc);
+}  
+}
+
+var abc = new String ( prompt('입력하신 문자의 길이가 확인 가능 합니다.') );
+lengthCheck(abc);
 
     </script>
 </body>
