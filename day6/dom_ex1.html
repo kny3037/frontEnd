@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>오늘의 과일</h3>
+    <ul>
+        <li id="apple">사과🍎</li>
+        <li id="banana">바나나🍌</li>
+        <li id="orange">오렌지🍊</li>
+    </ul>
+    <ul id="fruit">
+        <li><span>레몬🍋</span></li>
+    </ul>
+    <button onclick="red()">글꼴 색상 변경 : RED</button>
+    <button onclick="lager()">글꼴 색상 변경 :120%</button>
+    <script>
+        const $banana = document.getElementById("banana");   //요소 1개만 찾아옵니다. 
+        $banana.innerHTML="Banana🍌";
+
+        //요소 여러개를 찾아오는 메소드
+        const $list = document.getElementsByTagName('li');  //요소 4개 있습니다. ->HTML 컬렉션 객체타입을 생성합니다.
+        console.log($list);
+        //배열로 변환이 필요합니다.[...]기호 스프레드 연산자.
+        [...$list].forEach(function(item){   //배열객체로 foreach
+            item.style.color='green';
+        });
+
+        function red(){
+            [...$list].forEach(function(fruit){   //컬렉션 객체를 배열로 변환. 콜백함수 매개변수는 순서의 의미가 있고 변수명은 임의로 작성.
+                fruit.style.color='red';
+            });
+
+        }
+
+        function lager(){
+            [...$list].forEach((fruit)=> fruit.style.fontSize='1.2em');
+        }
+
+        /* DOM 메소드 : 1. document.getElementById, 2. document.getElementsByTagName, 3. document.getElementsByClassName
+                        HTML Collection 타입으로 리턴하는 것은 2,3번입니다.  */
+    </script>
+</body>
+</html>
